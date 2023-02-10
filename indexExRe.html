@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expresiones Regulares</title>
+    <link rel="shortcut icon" href="#">
+    <!-- ↓↓↓↓ link para agregar el estilo de bootstrap ↓↓↓↓ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body> <!-- -->
+    <!-- container es una clase para manejar el contenido de la página y que se vea ordenado
+    y centrado, para ver la diferencia (y la utilidad de eso), se puede borrar la clase 
+    container de este div -->
+    <div class="container py-4"> <!-- py = padding en el eje Y, osea arriba y abajo -->
+        <header class="pb-3 mb-4 border-bottom"> <!-- pb = padding bottom; mb = margin bottom -->
+            <span class="fs-4">Jessica Labrado - Matrícula: 172129 - Seguridad de la información</span> <!--fs= font size-->
+            </a>
+        </header>
+
+        <!--rounded se refiere a lo redondeado de los bordes-->
+        <div class="text-dark rounded-top-4" style="background-color: rgb(186, 242, 233);"> 
+            <div class="container-fluid py-2">
+            <h4><strong>Texto de ejemplo:</strong></h4>
+            </div>
+        </div>
+
+        <div class="p-3 mb-3 bg-light text-dark rounded-bottom-4"> <!--bg-dark= background color -> dark -->
+            <div class="container-fluid">
+            <p id="texto">
+            El patronus es una especie de fuerza positiva, una proyección de las mismas cosas de las que el dementor se alimenta: esperanza, alegría deseo de vivir…". Así lo escribió J.K. Rowling en 'El prisionero de Azkaban', el tercer libro de la saga Harry Potter. Es el primer volumen en el que aparece este maravilloso conjuro, el único capaz de repeler a los seres más oscuros de la Gran Bretaña mágica.
+            </p>
+            </div>
+        </div>
+
+        Regex aplicado: 
+        <div class="badge fs-5 text-bg-warning">
+            /[^\w]+[Pp]+[A-Za-zÀ-ÿ]+/g
+        </div>
+        <br><br>
+        Significado:
+        <div class="badge fs-6 text-dark" style="background-color: rgb(170, 220, 212);">
+            Todas las palabras completas que inicien con la letra p mayúscula o minúscula, seguidas de 0 o más caracteres del alfabeto, con tildes.
+        </div>
+
+        <div class="p-3 my-3 bg-dark text-light rounded-4"> <!--bg-danger= fondo rojizo; my = margen en eje Y (arriba y abajo)-->
+            <div class="container-fluid">
+            <p id="palabrasResultado">
+                
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="ERJs.js"></script>
+    <!-- ↓↓↓↓ link para agregar el JavaScript de bootstrap ↓↓↓↓ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
